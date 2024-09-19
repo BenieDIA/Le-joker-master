@@ -1,3 +1,13 @@
+<?php
+
+include_once __DIR__ .'/controller/baseController.php';
+include_once __DIR__ .'/template/header.inc.php';
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,13 +21,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="public/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
     <!-- En-tête de la page -->
+    <?php
+
+
+$version = phpversion()
+?>
+
     <header>
         <h1>
-            <span aria-hidden="true">🤡</span>Le Joker
+            <span aria-hidden="true">🤡</span>Le Joker : version php <?php print $version ?>
         </h1>
     </header>
 
@@ -25,7 +41,7 @@
     <main>
         <!-- Section Affiche du film -->
         <section class="movie-poster">
-            <img src="https://wave.fr/images/1916/07/joker-3-bonnes-raisons-aller-voir-film-cinema-aujourdhui.jpg" alt="Affiche du film Le Joker" loading ="lazy">
+            <img src="https://wave.fr/images/1916/07/joker-3-bonnes-raisons-aller-voir-film-cinema-aujourdhui.jpg" alt="Affiche du film Le Joker">
         </section>
 
         <!-- Section Storyline -->
@@ -69,7 +85,11 @@
 
     <!-- Pied de page -->
     <footer>
-        <p>© 2024 - Informations sur le film Le Joker</p>
+        <?php
+include_once __DIR__ .'/template/footer.inc.php'
+
+
+?>
     </footer>
 </body>
 </html>
