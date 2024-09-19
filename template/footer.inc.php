@@ -1,5 +1,5 @@
 <footer>
-        <p>© 2024 - Informations sur le film Le Joker</p>
+        <p>&copy;  <?=$_years->format('Y')?>  - Informations sur le film Le Joker</p>
     </footer>
 </body>
 </html>
