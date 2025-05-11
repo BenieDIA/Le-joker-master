@@ -3,4 +3,3 @@
 > Ajouter tout une partie fonctionnel que dans ce prototype de page n'existe pas.
 > 🚀 [Voir la publication](https://giusmili.github.io/Le-joker/)
 > 
-![auteur](./asset/giusmili-lead-developer.svg)
